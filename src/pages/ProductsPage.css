@@ -1,0 +1,112 @@
+/* Общий стиль для страницы продуктов */
+.products-page {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5fef5;
+    min-height: 100vh;
+}
+
+/* Панель фильтров и поиска */
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+
+}
+
+/* Ограничиваем ширину поисковой строки */
+.search-input {
+    flex: 1;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Контейнер для селекторов */
+.select-group {
+    display: flex;
+    gap: 15px;
+}
+
+.select-group select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Контейнер для таблицы с ограниченной шириной и центровкой */
+.products-list {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+/* Стили для таблицы */
+.products-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.products-list th,
+.products-list td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.products-list th {
+    background-color: #4E6701;
+    color: #fff;
+    font-size: 16px;
+}
+
+.products-list td {
+    font-size: 14px;
+    color: #333;
+}
+
+.products-list tr:last-child td {
+    border-bottom: none;
+}
+
+/* Эффект при наведении на строку */
+.products-list tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Центрируем и отступы */
+.infinite-footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Общие стили для обоих сообщений */
+.infinite-footer p {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Стиль для «Загрузка ещё...» */
+.infinite-footer p:first-child {
+    background: #E8F5E9;
+    color: #388E3C;
+}
+
+/* Стиль для «Больше нет данных» */
+.infinite-footer p:last-child {
+    background: #F5F5F5;
+    color: #757575;
+}

@@ -1,0 +1,141 @@
+{
+  "header": {
+    "nav1": "Home",
+    "nav2": "Products by Region",
+    "nav3": "National Food",
+    "nav4": "About us"
+  },
+
+  "auth": {
+    "nav1": "Sign in"
+  },
+  "slides": {
+    "slide1": {
+      "smallText": "Data Base",
+      "bigText1": "Food products",
+      "bigText2": "Kyrgyz Republic"
+    },
+    "slide2": {
+      "smallText": "Ministry",
+      "bigText1": "Water resources, agriculture and processing industry",
+      "bigText2": "Kyrgyz Republic"
+    }
+  },
+
+
+  "infoBlock": {
+    "title": "About the AFACI Project",
+    "description": "The Asian Food and Agriculture Cooperation Initiative (AFACI), together with I. Razzakov KSTU and the Ministry of Agriculture of the Kyrgyz Republic, has been conducting research on food composition since December 2021.",
+    "point1": "Research is conducted in 6 regions of the Kyrgyz Republic.",
+    "point2": "Methods: chemical analysis, mineral composition, fatty and amino acid composition.",
+    "point3": "In 2024, more than 150 products were tested and 11 scientific articles published."
+  },
+
+  "aboutUs": {
+    "title": "AFACI Project",
+    "intro": "The Asian Food and Agriculture Cooperation Initiative (AFACI), together with I. Razzakov KSTU and the Department of Food Processing and Organic Agriculture of the Ministry of Water Resources, Agriculture and Processing Industry of the Kyrgyz Republic, has been conducting research on building a Database of food composition in the Kyrgyz Republic since December 2021.",
+    "teamTitle": "Our Team",
+    "chair": "Chair: Djamakeeva A. D., PhD in Technical Sciences, Professor.",
+    "lead": "Lead Researcher: Chynaliev M. T., Department Director.",
+    "membersTitle": "Committee Members:",
+    "member1": "Esenamanova M. K., MD, Professor.",
+    "member2": "Kozhobekova K. K., PhD in Technical Sciences, Professor.",
+    "member3": "Azhibekova A., Chief Technologist at RIHA LLC.",
+    "member4": "Aksupova A. M., Scientific Secretary.",
+    "member5": "Ashymova A. Zh., IT programmer.",
+
+    "methodsTitle": "Research Methods",
+    "methods": "Standards: drying in SESH-3M oven, Soxhlet apparatus, RL-2 refractometer, ICP-AES. Energy value — calculation method. Amino acids — HPLC according to MN 1363-2000, fatty acids — GC according to MN 1364-2000.",
+    "resultsTitle": "Results by Year",
+    "y2022": [
+      "Meat, milk, grains, nuts, vegetables, fruits.",
+      "Chemical, mineral, amino acid, and fatty acid composition.",
+      "Published in scientific journals."
+    ],
+    "y2023": [
+      "11 articles; product testing from 6 regions of the Kyrgyz Republic."
+    ],
+    "y2024": [
+      "30 products; AFCD seminar in Bangkok (13 countries).",
+      "Publications in local and international journals."
+    ],
+    "newSectionTitle": "Support and Partnership",
+    "newSectionText": "The Department of Food Processing and Organic Agriculture of the Ministry of Agriculture and Water Resources of the Kyrgyz Republic, together with I. Razzakov Kyrgyz Technical University and supported by the AFACI project, has been conducting research at the accredited laboratory of food and agricultural products of the CSM under the Ministry of Economy of the Kyrgyz Republic since December 2021. The research is led by the project’s Lead Researcher — Director of the Department, Chynaliev M. T., as well as food engineering scientists, PhD Aksupova A. M., Professor Djamakeeva A. D. of KTU, and Technical Committee members.",
+    "newSectionTextIntro": "The Department of Food Processing and Organic Agriculture of the Ministry of Agriculture and Water Resources of the Kyrgyz Republic, together with I. Razzakov Kyrgyz Technical University and supported by the AFACI project, has been conducting research at the accredited laboratory of food and agricultural products of the CSM under the Ministry of Economy of the Kyrgyz Republic since December 2021.",
+    "newSectionTextHighlight": "The research is led by the project’s Lead Researcher — Director of the Department, Chynaliev M. T., along with food engineering scientists, PhD Aksupova A. M., Professor Djamakeeva A. D. of KTU, and members of the Technical Committee."
+
+  },
+
+
+
+
+  "regions": {
+    "Чуйская область": "Chüy"
+  },
+
+  "categories": {
+    "Готовые продукты": "Finished products"
+  },
+
+  "NatioanalBitText": "National dishes of the Kyrgyz Republic",
+
+  "loading": "Loading...",
+  "error": "Error",
+  "error_message": "Error: {{error}}",
+  "back": "Back",
+  "chemical_composition": "Chemical Composition",
+  "mineral_composition": "Mineral Composition",
+  "substance": "Substance",
+  "quantity": "Quantity",
+  "per_100g": "Per 100 grams of edible portion",
+  "mineral": "Mineral",
+  "category": "Category",
+  "region": "Region",
+
+
+
+  "minerals": {
+    "Кальций": "Calcium",
+    "Натрий": "Sodium",
+    "Калий": "Potassium",
+    "Фосфор": "Phosphorus",
+    "Марганец": "Manganese",
+    "Цинк": "Zinc",
+    "Скандий": "Scandium",
+    "Медь": "Copper",
+    "Железо": "Iron",
+    "Барий": "Barium",
+    "Бор": "Boron",
+    "Литий": "Lithium",
+    "Алюминий": "Aluminium",
+    "Магний": "Magnesium",
+    "Ванадий": "Vanadium",
+    "Нитрий": "Sodium",
+    "Коваль": "Cobalt",
+    "Хром": "Chromium",
+    "Олово": "Tin"
+  },
+  "compounds": {
+    "Белок": "Protein",
+    "Жир": "Fat",
+    "Углеводы": "Carbohydrates",
+    "Зольность": "Ash content",
+    "Влажность": "Moisture",
+    "Энергетическая ценность": "Energy value"
+  },
+
+  "products_in_db": "Products in database",
+  "national_dishes": "National dishes",
+
+
+
+  "table": {
+    "name": "Name",
+    "category": "Category",
+    "region": "Region"
+  },
+
+  "search": {
+    "placeholder": "Search by name..."
+  }
+}

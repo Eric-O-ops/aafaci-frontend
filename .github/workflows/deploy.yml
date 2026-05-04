@@ -1,0 +1,55 @@
+name: React CI/CD Pipeline
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node 18
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        cache: npm            # или yarn
+
+    - name: Install & Build
+      env:
+        CI: false
+      run: |
+        npm ci --legacy-peer-deps
+        npm run build           # результат → ./build
+
+    - name: Pack build folder
+      run: |
+        tar -czf react-build.tar.gz build
+
+    - name: Prepare SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+        eval "$(ssh-agent -s)"
+        ssh-add ~/.ssh/id_rsa
+
+    - name: Deploy to server
+      run: |
+        scp -v react-build.tar.gz ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/tmp/react-build.tar.gz
+
+        ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} <<'SSH'
+          set -e
+          mkdir -p /home/bekzhan/frontend
+          rm -rf /home/bekzhan/frontend/*
+          tar -xzf /tmp/react-build.tar.gz -C /home/bekzhan/frontend
+          rm /tmp/react-build.tar.gz
+
+          # если фронт обслуживает nginx, перезагрузим его
+          sudo systemctl reload nginx
+        SSH

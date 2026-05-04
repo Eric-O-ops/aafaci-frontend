@@ -1,0 +1,376 @@
+/*!**/
+/*!* src/components/Header.css *!*/
+/*.header {*/
+/*    position: relative;*/
+/*    background-color: #fff;*/
+/*    padding: 32px 40px;*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+/*   */
+/*}*/
+
+/*.nav {*/
+/*    position: relative;*/
+/*    height: 100%;*/
+/*}*/
+/*!* Центрируем список навигационных кнопок *!*/
+/*.nav-links {*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    display: flex;*/
+/*    gap: 70px; !* расстояние между кнопками *!*/
+/*    list-style: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*!* Эффекты при наведении *!*/
+/*.nav-links li a:hover {*/
+/*    color: #4E6701;*/
+/*    transform: translateY(-2px);    !* небольшое поднятие кнопки *!*/
+/*}*/
+/*.nav-links li a:hover::after {*/
+/*    width: 100%;                    !* линия выдвигается на всю ширину *!*/
+/*}*/
+/*.auth .login:hover {*/
+/*    color: #4E6701;*/
+/*}*/
+/*.auth .login {*/
+/*    text-decoration: none;*/
+/*    color: #333;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    font-weight: 600;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*!* Кнопка "Войти" в правом углу *!*/
+/*.auth {*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*}*/
+
+
+/*.nav-links li a {*/
+/*    position: relative;             !* для позиционирования псевдоэлемента *!*/
+/*    text-decoration: none;*/
+/*    color: #333;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    transition: color 0.3s ease, transform 0.3s ease;*/
+/*}*/
+
+/*.nav-links li a::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: -2px;                   !* позиция чуть ниже текста *!*/
+/*    left: 0;*/
+/*    width: 0;*/
+/*    height: 2px;                    !* толщина линии *!*/
+/*    background: #4E6701;            !* цвет линии, можно подстроить *!*/
+/*    transition: width 0.3s ease;*/
+/*}*/
+
+/*!* Логотип "Affaci" слева *!*/
+/*.logo {*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    font-size: 30px;*/
+/*    font-weight: 600;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    color: #4E6701;*/
+/*}*!*/
+/*!* src/components/Header.css *!*/
+/*!* src/components/Header.css *!*/
+
+/*!* src/components/Header.css *!*/
+
+/*.header {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    !* Задаём минимальную высоту и уменьшаем вертикальные паддинги *!*/
+
+/*    min-height: 64px;*/
+/*    padding: 16px 40px;*/
+/*    background-color: #fff;*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+/*    !* Чтобы точно не менялась высота *!*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*!* Логотип слева *!*/
+/*.logo {*/
+/*    flex: 0 0 auto;*/
+/*    font-size: 1.875rem;   !* 30px *!*/
+/*    font-weight: 600;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    color: #4E6701;*/
+/*    margin-right: 10rem;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    !*margin: 0;*!*/
+/*}*/
+
+/*!* Контейнер для навигации — займёт всё свободное место *!*/
+/*.nav {*/
+/*    flex: 1 1 auto;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+
+/*    !* отступы слева и справа *!*/
+/*    padding: 0 2rem;*/
+/*}*/
+
+/*!* Список ссылок по центру *!*/
+/*.nav-links {*/
+/*    display: flex;*/
+/*    gap: 2rem;             !* вместо 70px *!*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    list-style: none;*/
+/*    align-items: center;*/
+/*}*/
+
+/*!* Ссылки *!*/
+/*.nav-links li a {*/
+/*    position: relative;*/
+/*    text-decoration: none;*/
+/*    color: #333;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    transition: color 0.3s ease, transform 0.3s ease;*/
+/*}*/
+/*.nav-links li a::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: -2px;*/
+/*    left: 0;*/
+/*    width: 0;*/
+/*    height: 2px;*/
+/*    background: #4E6701;*/
+/*    transition: width 0.3s ease;*/
+/*}*/
+/*.nav-links li a:hover {*/
+/*    color: #4E6701;*/
+/*    transform: translateY(-2px);*/
+/*}*/
+/*.nav-links li a:hover::after {*/
+/*    width: 100%;*/
+/*}*/
+
+/*!* Блок «Войти» *!*/
+/*.auth {*/
+/*          !* ни растягиваться, ни сжиматься *!*/
+/*    margin-left: 10rem;    !* отступ от навигации *!*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+/*.auth .login {*/
+/*    text-decoration: none;*/
+/*    color: #333;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    font-weight: 600;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+/*.auth .login:hover {*/
+/*    color: #4E6701;*/
+/*}*/
+
+/*!* Адаптивные паддинги и gap для меньших экранов *!*/
+/*@media (max-width: 1440px) {*/
+/*    .header { padding: 12px 32px; }*/
+/*    .nav-links { gap: 1.5rem; }*/
+/*}*/
+
+/*@media (max-width: 1024px) {*/
+/*    .header { padding: 12px 24px; }*/
+/*    .nav-links { gap: 1rem; font-size: 0.9rem; }*/
+/*}*/
+
+/*@media (max-width: 768px) {*/
+/*    .nav-links { display: none; }*/
+/*    !* Здесь можете вывести кнопку-гамбургер: *!*/
+/*    !* .menu-btn { display: block; } *!*/
+/*}*/
+
+
+
+
+
+
+/*!* Группа гербов + логотип *!*/
+/*.logo-with-emblems {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    flex: 0 0 auto;      !* не растягиваться и не сжиматься *!*/
+/*}*/
+
+/*!* Сам логотип с отступом от гербов *!*/
+/*.logo-with-emblems .logo {*/
+/*    font-weight: 600;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    color: #4E6701;*/
+/*    margin-left: 2rem;    !* пространство после гербов *!*/
+/*}*/
+
+/*!* Гербы (иконки) *!*/
+/*.emblem {*/
+/*    height: 30px;         !* оптимальный размер для иконки *!*/
+/*    width: auto;*/
+/*    margin-right: 1rem; !* отступ между гербами *!*/
+/*    object-fit: contain;*/
+/*}*/
+
+/*!* — остальные ваши стили для .nav, .nav-links, .auth остаются без изменений — *!*/
+
+
+
+/* src/components/Header.css */
+
+/* Сам header */
+
+
+.lang-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-toggle {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 6px;
+    transition: transform 0.3s ease;
+}
+
+.lang-toggle:hover {
+    transform: scale(1.2);
+}
+
+.lang-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 8px;
+    z-index: 1000;
+    min-width: 120px;
+}
+
+.lang-dropdown button {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 8px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.lang-switcher:hover .lang-dropdown {
+    display: block;
+}
+
+.header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 100;
+}
+
+/* Контейнер шапки: три зоны, выровнять по центру вертикали */
+.header-container {
+    max-width: 1200px;   /* или ваш контейнер */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    box-sizing: border-box;
+}
+
+/* === ЛЕВАЯ зона === */
+.header-left {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.emblem {
+    height: 32px;
+    margin-right: 1rem;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875rem; /* 30px */
+    font-weight: 600;
+    color: #4E6701;
+    margin-left: 0;      /* не нужен большой отступ */
+}
+
+/* === ЦЕНТРАЛЬНАЯ зона === */
+.nav-links {
+    flex: 1 1 auto;         /* занимает всё доступное пространство */
+    display: flex;
+    justify-content: center;/* ровно по центру */
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #4E6701;
+    transition: width 0.3s;
+}
+.nav-links a:hover {
+    color: #4E6701;
+    transform: translateY(-2px);
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* === ПРАВАЯ зона === */
+.header-right {
+    flex: 0 0 auto;
+}
+.login {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.login:hover {
+    color: #4E6701;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* или гамбургер-меню */
+    }
+}

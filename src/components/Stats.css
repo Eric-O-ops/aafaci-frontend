@@ -1,0 +1,22 @@
+.stats {
+    position: relative;
+    z-index: 3;         /* чтобы оказаться поверх .hero (у которой z-index: 1 или 2) */
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: -20px;  /* здесь магия: блок "залезает" на hero */
+}
+
+.stat-box {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 1px 20px;
+    min-width: 180px;
+}
+
+.stat-box h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,16 @@
+.segmented-slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.segmented-slider-track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.segmented-slider-image {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+}
