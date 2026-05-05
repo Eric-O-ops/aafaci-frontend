@@ -1,11 +1,11 @@
 // src/pages/NationalPage.jsx
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import {useNavigate} from 'react-router-dom';
 import './NationalPage.css';
 import ImageSlider from '../components/ImageSlider';
 
 import defaultImg from './OIP.jpeg';
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 
 export default function NationalPage() {
     const navigate = useNavigate();
@@ -16,11 +16,12 @@ export default function NationalPage() {
     const API = process.env.REACT_APP_API_URL;
 
     //Перевод
-    const { t, i18n } = useTranslation();
+    const {t, i18n} = useTranslation();
 
+    //Загрузка при старте
     useEffect(() => {
         const lang = i18n.language || 'ru';
-        fetch(`${API}/product/national?lng=${lang}`, { mode: 'cors' })
+        fetch(`${API}/product/national?lng=${lang}`, {mode: 'cors'})
             .then(res => {
                 if (!res.ok) throw new Error(`Ошибка: ${res.status}`);
                 return res.json();
@@ -30,18 +31,8 @@ export default function NationalPage() {
             .finally(() => setLoading(false));
     }, [i18n.language]);
 
-    const formatDate = iso => {
-        if (!iso) return '-';
-        const d = new Date(iso);
-        const day = d.getDate();
-        const month = d.getMonth() + 1;
-        const year = d.getFullYear();
-        return `${day}-${month.toString().padStart(2,'0')}-${year}`;
-    };
-
     if (loading) return <div className="np-loading">Загрузка...</div>;
-    if (error)   return <div className="np-error">¯\_(ツ)_/¯</div>;
-
+    if (error) return <div className="np-error">Возникла непредвиденная ошибка</div>;
 
     return (
         <div className="national-page">
@@ -55,8 +46,8 @@ export default function NationalPage() {
                     >
                         <div className="card-image">
                             {item.photoUrls && item.photoUrls.length > 0
-                                ? <ImageSlider urls={item.photoUrls} height={200} />
-                                : <img src={defaultImg} alt={item.name} className="dish-photo" />
+                                ? <ImageSlider urls={item.photoUrls} height={200}/>
+                                : <img src={defaultImg} alt={item.name} className="dish-photo"/>
                             }
                         </div>
                         <div className="card-content">
@@ -67,7 +58,6 @@ export default function NationalPage() {
                             <p className="dish-info">
                                 {t('Region')}: {t(`regions.${item.region}`)}
                             </p>
-                            <p className="dish-date">{formatDate(item.date)}</p>
                         </div>
                     </div>
                 ))}

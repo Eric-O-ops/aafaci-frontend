@@ -61,3 +61,34 @@
 .pd-error {
     color: #D32F2F;
 }
+
+.title-container {
+    display: flex;
+    justify-content: space-between; /* Расталкивает заголовок и кнопку по краям */
+    align-items: center;           /* Центрирует их по вертикали */
+    margin-bottom: 20px;
+}
+
+.recipe-btn {
+    padding: 10px 20px;
+    background-color: #28a745; /* Зеленый цвет для примера */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.recipe-btn:hover {
+    background-color: #218838;
+}
+
+/* Адаптивность: на мобилках заголовок и кнопка встанут друг под друга */
+@media (max-width: 600px) {
+    .title-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
