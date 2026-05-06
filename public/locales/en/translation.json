@@ -85,12 +85,24 @@
   "back": "Back",
   "chemical_composition": "Chemical Composition",
   "mineral_composition": "Mineral Composition",
+  "vitamin_composition": "Vitamin Composition",
+  "amino_acid_composition": "Amino Acid Composition",
+  "fatty_acid_composition": "Fatty Acid Composition",
+  "vitamin": "Vitamin",
+  "amino_acid": "Amino Acid",
+  "type": "Type",
   "substance": "Substance",
   "quantity": "Quantity",
-  "per_100g": "Per 100 grams of edible portion",
+  "per_100g": "per 100g",
+  "fatty_acid": "fatty acid",
   "mineral": "Mineral",
   "category": "Category",
   "region": "Region",
+
+
+
+  "ratio": "Ratio",
+  "aminoAcidRatios": "Amino acid ratios",
 
 
 

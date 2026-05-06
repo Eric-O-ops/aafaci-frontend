@@ -5,7 +5,7 @@ import './Footer.css';
 function Footer() {
     return (
         <footer className="footer">
-            <p>Afaci © 2025</p>
+            <p>Afaci © 2026</p>
         </footer>
     );
 }
