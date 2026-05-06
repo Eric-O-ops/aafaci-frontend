@@ -12,6 +12,7 @@ import ProductDetail from "./pages/ProductDetail";
 import NationalPage from "./pages/NationalPage";
 import AboutUs from "./pages/AboutUs";
 import RecipePage from "./pages/recipe/RecipePage";
+
 function AppContent() {
     const location = useLocation();
     const isAuthPage = location.pathname === '/auth'; // убедись, что маршрут точно /auth
@@ -38,7 +39,6 @@ function AppContent() {
       </>
   );
 }
-
 
 function App(){
     return (
