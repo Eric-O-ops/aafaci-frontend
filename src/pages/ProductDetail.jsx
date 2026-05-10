@@ -259,9 +259,9 @@ export default function ProductDetail() {
                 </section>
             )}
 
-            {detail.aminoAcidRatios?.length > 0 && (
+            {detail.fattyAcidMethylEsterRatios?.length > 0 && (
                 <section>
-                    <h2 className="section-title">{t('aminoAcidRatios')}</h2>
+                    <h2 className="section-title">{t('fattyAcidMethylEsterRatios')}</h2>
                     <table className="comp-table">
                         <thead>
                         <tr>
@@ -271,7 +271,7 @@ export default function ProductDetail() {
                         </tr>
                         </thead>
                         <tbody>
-                        {detail.aminoAcidRatios.map(far => (
+                        {detail.fattyAcidMethylEsterRatios.map(far => (
                             <tr key={far.id}>
                                 <td>{far.ratioName}</td>
                                 <td>{far.quantity}</td>
